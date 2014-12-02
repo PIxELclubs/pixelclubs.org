@@ -1,13 +1,21 @@
+/** ANIMATION SEQUENCES **/
+
 $(document).ready(function () {
     $(".main").css("top", "-" + document.documentElement.clientHeight * 3 + "px");
+    
+    /** 
+     * Resets the height of the animated pillars based on the client browser's height.
+     * Occurs on load and every resize event.
+    **/ 
     function reset() {
-        $("#pillars").css("height", $("body").css("height"));
+        $("#intro-row-container").css("height", $("body").css("height"));
         $("#header").css("height", (document.documentElement.clientHeight * 0.8) + "px");
     }
     reset();
     $(window).resize(function () {reset(); });
     
-    $(".pillar-row").each(function (index) {
+    // Swoop up!
+    $(".intro-row").each(function (index) {
         var that = this;
         setTimeout(function () {
             $(that).animate({
@@ -19,8 +27,10 @@ $(document).ready(function () {
             });
         }, index * 100);
     });
+    
+    // Aaaand collapse!
     setTimeout(function () {
-        $(".pillar-row").each(function (index) {
+        $(".intro-row").each(function (index) {
             var that = this;
             $(that).animate({
                 marginTop: window.innerHeight + ((index + 2) * 10) + 'px'
@@ -32,20 +42,16 @@ $(document).ready(function () {
                 top: "20%"
             }, 900);
         });
-
-
         setTimeout(function () {
-            $("#pillars").hide();
+            $("#intro-row-container").hide();
         }, 600);
     }, 2500);
     
+    // Show that beautiful background!
     setTimeout(function () {
         $(".bg").fadeIn(1000);
-        $(".expand-row").delay(5000).animate({
+        $(".expand-row").delay(4000).animate({
             height: (window.innerHeight * 0.6) + 'px'
         }, 300);
     }, 3000);
-    
-   
-  
 });

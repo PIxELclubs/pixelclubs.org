@@ -9,11 +9,11 @@
         <title>PIxEL - programmers + innovators * entrepreneurs + leaders</title>
         <meta name="description" content="PIxEL Clubs is a national organization of after-school high school clubs to teach students to pursue computer science through web tools, design, and business.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="pixel,pixel clubs,high school,programming,code">
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-        <link rel="stylesheet" href="css/colors.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
@@ -21,32 +21,83 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div id="pillars">
-            <div class="pillar-row" style="background-color: #FF7E79">
-                <h1 class="tagline">For artists and designers.</h1>
+        <div id="intro-row-container">
+            <div class="intro-row red">
+                <h1>For artists and designers.</h1>
             </div>
-            <div class="pillar-row" style="background-color: #00F3FF">
-                <h1 class="tagline">For hackers and coders.</h1>
+            <div class="intro-row lightblue">
+                <h1>For hackers and coders.</h1>
             </div>
-            <div class="pillar-row" style="background-color: #75CBFE">
-                <h1 class="tagline">For entrepreneurs and enterprisers.</h1>
+            <div class="intro-row blue">
+                <h1>For entrepreneurs and hustlers.</h1>
             </div>
-            <div class="pillar-row" style="background-color: #FE89D7">
-                <h1 class="tagline">For experts and beginners.</h1>
+            <div class="intro-row pink">
+                <h1>For experts and beginners.</h1>
             </div>
-            <div class="pillar-row" style="background-color: #ECFF45">
-                <h1 class="tagline">For you.</h1>
+            <div class="intro-row yellow">
+                <h1>For you.</h1>
             </div>
         </div>
-        <div class="main" style="">
+        <div class="main">
             <div id="header">
-                <img src="img/pxl-temp.png" width="400">
-                <h1 id="explain"></h1>
-                <h2 id="cta"></h2>
+                <img src="img/pxl-temp.png">
+                <h1 id="acronym"></h1>
+                <h2 id="description"></h2>
             </div>
-            <div class="expand-row" style="background-color: #FF7E79; height: 0px;">
-                <h1 class="tagline">For artists and designers.</h1>
-                <p>Hello world.</p>
+            <div class="expand-row red">
+                <div class="col-md-4">
+                    <h1>For <wbr>artists&nbsp;&amp; designers.</h1>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                    PIxEL places an emphasis on lorem ipsum dolor 
+                    sit amet. 
+                    </p>
+                </div>
+            </div>
+            <div class="expand-row lightblue">
+                <div class="col-md-4">
+                    <h1>For <wbr>hackers&nbsp;&amp; coders.</h1>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                    PIxEL places an emphasis on lorem ipsum dolor 
+                    sit amet. 
+                    </p>
+                </div>
+            </div>
+            <div class="expand-row blue">
+                <div class="col-md-4">
+                    <h1>For <wbr>entrepreneurs&nbsp;&amp; enterprisers.</h1>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                    PIxEL places an emphasis on lorem ipsum dolor 
+                    sit amet. 
+                    </p>
+                </div>
+            </div>
+            <div class="expand-row pink">
+                <div class="col-md-4">
+                    <h1>For <wbr>experts&nbsp;&amp; beginners.</h1>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                    PIxEL places an emphasis on lorem ipsum dolor 
+                    sit amet. 
+                    </p>
+                </div>
+            </div>
+            <div class="expand-row yellow">
+                <div class="col-md-4">
+                    <h1>For you.</h1>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                    PIxEL places an emphasis on lorem ipsum dolor 
+                    sit amet. 
+                    </p>
+                </div>
             </div>
         </div>
         <div class="bg"></div>
@@ -58,50 +109,7 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/jquery.typetype.min.js"></script>
-        <script>
-        /** blinkingCursor by Nathan Allen **/
-        function blinkingCursor(elem){
-            var elem = elem || document.querySelector('#blinking-cursor');
-            setInterval(function(){
-                elem.style.visibility = 'hidden';
-                setTimeout(function(){
-                    elem.style.visibility = '';
-                }, 600);
-            }, 1200);
-        }
 
-        setTimeout(function () {
-            $("h1#explain").typetype(
-                "programmers + innovators * entrepreneurs + leaders.", {
-                    t: 30,
-                    e: 0,
-                    keypress: function () {
-                        $("span#blinking-cursor").remove();
-                        $("h1#explain").delay(1000).append("<span id=\"blinking-cursor\">|</span>");
-                    },
-                    callback: function () {
-                        blinkingCursor(document.querySelector("span#blinking-cursor"));
-                        $("span#blinking-cursor").delay(4800).remove();
-                        $("h2#cta").append("<span id=\"blinking-cursor\">|</span>");
-                    }
-                });
-            $("h2#cta").delay(5000).typetype("Become a Charter Member today.", {
-                t: 60,
-                e: 0,
-                keypress: function () {
-                    $("span#blinking-cursor").remove();
-                    $("h2#cta").delay(1000).append("<span id=\"blinking-cursor\">|</span>");
-                    blinkingCursor(document.querySelector("span#blinking-cursor"));
-                },
-                callback: function () {
-                    blinkingCursor(document.querySelector("span#blinking-cursor"));
-                }
-            });
-        }, 3000);
-        
-        </script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;

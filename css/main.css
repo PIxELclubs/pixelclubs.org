@@ -100,17 +100,44 @@ body {
     width: 100%;
 }
 
-#pillars {
+/* PIxEL brand coloring */
+
+.red {
+    background-color: #FF7E79;
+    color: rgba(255,126,121, 0.75);
+}
+
+.lightblue {
+    background-color: #00F3FF;
+    color: rgba(0, 243, 255, 0.9);
+}
+
+.blue {
+    background-color: #75CBFE;
+    color: rgba(117, 203, 254, 0.8);
+}
+
+.pink {
+    background-color: #FE89D7;
+    color: rgba(254, 137, 215, 0.75);
+}
+
+.yellow {
+    background-color: #ECFF45;
+    color: rgba(236, 255, 69, 0.9);
+}
+
+#intro-row-container {
     height: 900px;
 }
 
-.pillar-row {
+.intro-row {
     height: 20%; 
     margin-top: 10px;
     opacity: 0.000000000001;
 }
 
-.tagline {
+.intro-row h1 {
     display: block;
     margin: 0;
     position: relative;
@@ -121,7 +148,13 @@ body {
     font-size: 42pt;
     font-weight: 600;
     text-shadow: 0px 0px 20px rgba(0, 0, 0, .3);
+}
 
+.expand-row h1 {
+    font-size: 96pt;
+    font-weight: 600;
+    text-align: left;
+    text-shadow: 1px 4px 6px #f0f0f0, 0 0 0 #000, 1px 4px 6px #f0f0f0;
 }
 
 .main {
@@ -144,9 +177,22 @@ body {
 
 #header h1 {
     font-size: 18pt;
-    font-family: "Consolas";
+    font-family: "Consolas", "Lucida Console", "Courier New", monospace;
     font-weight: 900;
     color: white;
+}
+
+#header h2 {
+    
+}
+
+#header img {
+    /**
+    box-shadow: 10px 10px 5px #fff;
+    -webkit-box-shadow: 10px 10px 5px #fff;
+    -moz-box-shadow: 3px 3px 1px #fff;
+    **/
+    width: 35%;
 }
 
 .bg {
@@ -156,7 +202,7 @@ body {
     height: 100%;
     width: 100%;
     display: none;
-    background-image: url("../img/bg2.png");
+    background-image: url("../img/bg3.png");
     background-repeat: no-repeat;
     background-size: cover;
     /*filter: blur(10px);
@@ -167,7 +213,9 @@ body {
 }
 
 .expand-row {
+    height: 0px;
     width: 100%;
+    background-color: #F0F0F0;
 }
 
 /* ==========================================================================
