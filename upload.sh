@@ -12,5 +12,6 @@ git config credential.helper "store --file=.git/credentials"
 echo "https://${GH_TOKEN}@github.com" > .git/credentials
 git ls-files | grep -Fvx CNAME | grep -Fvx news.json | xargs rm -rf
 cp -a ../out/* .
-git commit -a -m 'Update'
+git add -A *
+git commit -m 'Update'
 git push
