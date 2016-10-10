@@ -22,7 +22,11 @@ html(lang='en')
     meta(property='og:image' content='')
     meta(property='og:url' content='https://pixelclubs.org/')
     meta(property='og:description' content='')
-
+    if !dev
+      style.
+        .-d {
+          display: none
+        }
   body.parallax-wrapper
     .parallax
       +group
@@ -40,7 +44,7 @@ html(lang='en')
               .row: span.btn Start a PIxEL
           .tagline programmers + innovators * entrepreneurs + leaders
         +back
-      +group.innocent
+      +group.innocent.-d
         +fore
           .row.updates
             .col.blog
@@ -53,19 +57,19 @@ html(lang='en')
             .col
               h3 PIxEL Clubs are started by students, for students.
               p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-      +group
+      +group.-d
         +fore
           .row.practical
             .col: span PIxEL is about the practical.
         +back
-      +group.innocent
+      +group.innocent.-d
         +fore
           .row
             .col
               p Join our mission today.
           .row
             .col
-              p HHow?
+              p How?
 
   //- script(src='https://cdn.polyfill.io/v2/polyfill.min.js')
   //-

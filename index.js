@@ -18,7 +18,9 @@ app.use('/styles', sass({
 app.use('/styles', express.static('out'));
 
 app.get('/', (req, res, next) => {
-  res.render('index.pug');
+  res.render('index.pug', {
+    dev: process.env.NODE_ENV === 'development'
+  });
 });
 
 export const server = createServer(app);
