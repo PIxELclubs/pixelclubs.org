@@ -4,6 +4,10 @@ node_js:
 
 sudo: false
 
+cache:
+  directories:
+  - node_modules
+
 script:
   - node_modules/.bin/babel-node stop.js
 after_success:
@@ -11,4 +15,4 @@ after_success:
 
 env:
   global:
-    secure: cACWAlQPd9DSGTtYTFMlWLfpBTD4yyuxvg2GFGMymZgLzHK3f18vGrdyOoGaHr2/WC+T3obMtMuKBg50/s8a0y0RM7ORlgDQc212UR7FHufge5wvGAuc426caRP1d9rQt80Qx6CKGleju/mBut1tSjcmQKKy5GaYwi+trr0Tu8w=
+    secure: "LpGpUJXaNXYPGMSlH53a5xs4uzGPEthkk5PSkI/ev9KvfkaZEyGe/HMP92s5TQLoyUdC81L+3FMzJ29fdh8K2/hr0ZOtfg2mL2Ao5ksksAg/bPiJ0xgsdnX0KaxssqFnxGOM5p1nlam6KP1TjJBmmCGiDh+csE99EnzDhMrKD2M="
