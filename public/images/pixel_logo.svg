@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1024 396" enable-background="new 0 0 1024 396" xml:space="preserve">
-<font horiz-adv-x="1000">
-<font-face font-family="Dimitri" units-per-em="1000" underline-position="-133" underline-thickness="20"/>
-<missing-glyph horiz-adv-x="500" d="M63,0l0,802l375,0l0,-802M125,63l250,0l0,677l-250,0z"/>
-<glyph unicode="E" horiz-adv-x="540" d="M540,0l-470,0l0,702l470,0l0,-171l-272,0l0,-112l105,0l0,-122l-105,0l0,-126l272,0z"/>
-<glyph unicode="I" horiz-adv-x="268" d="M268,0l-198,0l0,702l198,0z"/>
-<glyph unicode="L" horiz-adv-x="493" d="M493,0l-423,0l0,702l198,0l0,-531l225,0z"/>
-<glyph unicode="p" horiz-adv-x="540" d="M541,581l-1,-442l-272,0l0,-139l-198,0l0,702l321,0M342,259l0,272l-74,0l0,-272z"/>
-<glyph unicode="x" horiz-adv-x="540" d="M70,445l112,-110l-112,0l0,-335l199,0l0,213l74,0l0,-213l198,0l0,187l-112,110l112,0l0,405l-199,0l0,-283l-74,0l0,283l-198,0z"/>
-</font>
-
-	<text transform="matrix(1 0 0 1 24.7766 294.9682)" fill="#FFFFFF" font-family="'Dimitri'" font-size="347.4353" letter-spacing="8">pIxEL</text>
+   viewBox="0 0 1024 396" enable-background="new 0 0 1024 396" xml:space="preserve">
+<g>
+  <path fill="#FFFFFF" d="M212.4,93.1v153.6h-94.5V295H49.1V51.1h111.3L212.4,93.1z M143.6,205v-94.5h-25.7V205H143.6z"/>
+  <path fill="#FFFFFF" d="M314.2,295h-68.8V51.1h68.8V295z"/>
+  <path fill="#FFFFFF" d="M347.2,51.1h69.1v98.3H442V51.1h68.8v140.7h-38.9l38.9,38.2v65H442v-74h-25.7v74h-69.1V178.6h38.9
+    l-38.9-38.2V51.1z"/>
+  <path fill="#FFFFFF" d="M706.8,295H543.5V51.1h163.3v59.4h-94.5v38.9h36.5v42.4h-36.5v43.8h94.5V295z"/>
+  <path fill="#FFFFFF" d="M886.8,295h-147V51.1h68.8v184.5h78.2V295z"/>
+</g>
 <polygon fill="none" stroke="#FFFFFF" stroke-width="16" stroke-miterlimit="10" points="11.5,48.8 11.5,315.7 81.3,382.2 
-	170.2,382.2 170.2,323.2 248.7,323.2 301.6,382.2 378,382.2 378,362 401.9,382.2 462.9,382.2 462.9,362 486.8,382.2 578.4,382.2 
-	578.4,364 602.3,382.2 766.9,382.2 766.9,364 790.8,382.2 1011.3,382.2 1011.3,305.7 942.1,233.9 942.1,105 863.5,20.5 240.1,20.5 
-	212.8,52.9 173.5,20.5 11.5,20.5 "/>
+  170.2,382.2 170.2,323.2 248.7,323.2 301.6,382.2 378,382.2 378,362 401.9,382.2 462.9,382.2 462.9,362 486.8,382.2 578.4,382.2 
+  578.4,364 602.3,382.2 766.9,382.2 766.9,364 790.8,382.2 1011.3,382.2 1011.3,305.7 942.1,233.9 942.1,105 863.5,20.5 240.1,20.5 
+  212.8,52.9 173.5,20.5 11.5,20.5 "/>
 </svg>
