@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - '6'
+
+sudo: false
+
+script:
+  - node_modules/.bin/babel-node stop.js
+after_success:
+  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && ./upload.sh
+
+env:
+  global:
+    secure: cACWAlQPd9DSGTtYTFMlWLfpBTD4yyuxvg2GFGMymZgLzHK3f18vGrdyOoGaHr2/WC+T3obMtMuKBg50/s8a0y0RM7ORlgDQc212UR7FHufge5wvGAuc426caRP1d9rQt80Qx6CKGleju/mBut1tSjcmQKKy5GaYwi+trr0Tu8w=
