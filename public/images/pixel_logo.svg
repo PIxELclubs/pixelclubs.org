@@ -1,17 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-   viewBox="0 0 1024 396" enable-background="new 0 0 1024 396" xml:space="preserve">
-<g>
-  <path fill="#FFFFFF" d="M212.4,93.1v153.6h-94.5V295H49.1V51.1h111.3L212.4,93.1z M143.6,205v-94.5h-25.7V205H143.6z"/>
-  <path fill="#FFFFFF" d="M314.2,295h-68.8V51.1h68.8V295z"/>
-  <path fill="#FFFFFF" d="M347.2,51.1h69.1v98.3H442V51.1h68.8v140.7h-38.9l38.9,38.2v65H442v-74h-25.7v74h-69.1V178.6h38.9
-    l-38.9-38.2V51.1z"/>
-  <path fill="#FFFFFF" d="M706.8,295H543.5V51.1h163.3v59.4h-94.5v38.9h36.5v42.4h-36.5v43.8h94.5V295z"/>
-  <path fill="#FFFFFF" d="M886.8,295h-147V51.1h68.8v184.5h78.2V295z"/>
-</g>
-<polygon fill="none" stroke="#FFFFFF" stroke-width="16" stroke-miterlimit="10" points="11.5,48.8 11.5,315.7 81.3,382.2 
-  170.2,382.2 170.2,323.2 248.7,323.2 301.6,382.2 378,382.2 378,362 401.9,382.2 462.9,382.2 462.9,362 486.8,382.2 578.4,382.2 
-  578.4,364 602.3,382.2 766.9,382.2 766.9,364 790.8,382.2 1011.3,382.2 1011.3,305.7 942.1,233.9 942.1,105 863.5,20.5 240.1,20.5 
-  212.8,52.9 173.5,20.5 11.5,20.5 "/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1039.8125 401.6875"><path d="M220.9 92.6v153.6h-94.5v48.3H57.6V50.6h111.3l52 42zm-68.8 111.9V110h-25.7v94.5h25.7zm170.6 90h-68.8V50.6h68.8v243.9zm33-243.9h69.1v98.3h25.7V50.6h68.8v140.7h-38.9l38.9 38.2v65h-68.8v-74h-25.7v74h-69.1V178.1h38.9l-38.9-38.2V50.6zm359.6 243.9H552V50.6h163.3V110h-94.5v38.9h36.5v42.4h-36.5v43.8h94.5v59.4zm180 0h-147V50.6h68.8v184.5h78.2v59.4z" fill="#fff"/><path stroke-miterlimit="10" fill="none" stroke="#fff" stroke-width="16" d="M178.7 381.7v-59h78.5l52.9 59h76.4v-20.2l23.9 20.2h61v-20.2l23.9 20.2h91.6v-18.2l23.9 18.2h164.6v-18.2l23.9 18.2h220.5v-76.5l-69.2-71.8V104.5L872 20H248.6l-27.3 32.4L182 20H20v295.2l69.8 66.5z"/></svg>
