@@ -11,6 +11,9 @@ $orange: #ff9a28;
 $pink: #f26d7d;
 $violet: #8781bd;
 
+$md-break: 900px;
+$sm-break: 650px;
+
 body {
   margin: 0;
   font-family: Montserrat, sans-serif;
@@ -30,6 +33,9 @@ a {
 }
 
 .group1 {
+  .logo {
+    width: 70%;
+  }
   > .back {
     $stripe-width: 25%;
     $stripe-headstart: $stripe-width / 2;
@@ -86,9 +92,23 @@ a {
       margin: auto;
       font-size: 36px;
       font-weight: 400;
+      display: flex;
+      flex-wrap: wrap;
 
       .col {
         padding: 1em;
+        display: flex;
+        flex: 1;
+        flex-flow: column wrap;
+        @media screen and (max-width: $md-break) {
+          padding: 0;
+        }
+        @media screen and (max-width: $sm-break) {
+          padding: 0;
+          flex: 0 0 100%;
+          flex-flow: row wrap;
+          font-size: 20pt;
+        }
       }
 
       .btn {
