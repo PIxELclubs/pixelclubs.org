@@ -5,11 +5,11 @@ set -ve
 git config --global user.email 'timothy+pxbot@pixelclubs.org'
 git config --global user.name 'PIxEL Bot on Travis'
 git config --global push.default simple
-git config credential.helper "store --file=.git/credentials"
-echo "https://${GH_TOKEN}:@github.com" > .git/credentials
 
 git clone 'https://github.com/PIxELclubs/pixelclubs.github.io.git' web
 cd web
+git config credential.helper "store --file=.git/credentials"
+echo "https://${GH_TOKEN}:@github.com" > .git/credentials
 git ls-files | xargs rm -rf
 cp -a ../out/* .
 git commit -a -m 'Update'
