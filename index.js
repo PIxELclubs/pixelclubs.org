@@ -1,8 +1,9 @@
 import express from 'express';
 import {join} from 'path';
+import {createServer} from 'http';
 import sass from 'node-sass-middleware';
 
-const app = express();
+export const app = express();
 
 app.set('view engine', 'pug');
 
@@ -20,6 +21,8 @@ app.get('/', (req, res, next) => {
   res.render('index.pug');
 });
 
-app.listen(8080, () => {
-  console.log(`Listening at port 8000`);
+export const server = createServer(app);
+
+server.listen(8000, () => {
+  console.log(`Listening at port ${8000}`);
 });
