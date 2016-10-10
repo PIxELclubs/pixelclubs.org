@@ -16,3 +16,7 @@ after_success:
 env:
   global:
     secure: "kdXseLFozG+AVgAOyiVfSLorbzTI2/ocxNy2vJdAjrAtBZRfmv7SI54OXYg1S+JU5LjW0VoOdsWOZzRolqloMiAwI57SoNbDfbz7yt4pllTt1Be8O2f6FVnHqTeoPoEYCcOjpib/9rn5qOV3kpbirjr0mLLdJNlIzENY8o350ys="
+
+notifications:
+  slack:
+    secure: "k4nydE780btE8sPN8sTJ6+abQrRVVCWvqZYGg3NxTwUL8sZl5fWEKleWRsCK7V34wxLuhTm/0DlReBFQ5JMqAnuFf7PnW0sVsiXLhPRXJBEQGCnbkdQ+XRuo0rgxTnwEq9C6LclEL3gAJDP8h1nJF7pZrpiEFQDnGt+4S2y/xCU="
