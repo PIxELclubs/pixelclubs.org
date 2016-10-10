@@ -1,0 +1,177 @@
+@import "ungrid.scss";
+@import "parallax.scss";
+@import "fonts.scss";
+
+$blue: #6dc2f5;
+$red: #da2644;
+$yellow: #fbee07;
+$green: #3ed945;
+$orange: #ff9a28;
+
+$pink: #f26d7d;
+$violet: #8781bd;
+
+body {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin: .5em 0;
+}
+
+a {
+  color: inherit;
+  border-bottom: 1px solid;
+  text-decoration: none;
+}
+
+.group1 {
+  > .back {
+    $stripe-width: 25%;
+    $stripe-headstart: $stripe-width / 2;
+    $stripe-colors: $blue, $red, $yellow, $green, $orange;
+    $stripe: ();
+    @for $i from 1 through length($stripe-colors) {
+      $color: nth($stripe-colors, $i);
+      $color: darken(transparentize($color, .05), 5%);
+      $stripe: $stripe, $color $stripe-width * ($i - 1) - $stripe-headstart,
+                        $color $stripe-width * $i - $stripe-headstart;
+    }
+
+    background: repeating-linear-gradient(45deg, $stripe), url(/images/montage.jpg);
+    background-size: cover;
+  }
+
+  > .fore {
+    color: white;
+
+    nav {
+      position: absolute;
+      max-width: 80%;
+      min-width: 460px;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      background: $blue;
+      font-size: 16px;
+
+      .row {
+        margin: auto;
+        width: initial;
+      }
+
+      .col {
+        display: inline-block;
+        padding: 1em;
+        text-align: center;
+        font-weight: 700;
+      }
+
+      .emph {
+        background: $yellow;
+      }
+    }
+
+    .main {
+      position: absolute;
+      max-width: 80%;
+      top: 25vh;
+      left: 0;
+      right: 0;
+      margin: auto;
+      font-size: 36px;
+      font-weight: 400;
+
+      .col {
+        padding: 1em;
+      }
+
+      .btn {
+        text-align: center;
+        font-weight: 700;
+        line-height: 3;
+        border: .2em white solid;
+        border-radius: .5em;
+        padding: .2em .4em;
+      }
+    }
+
+    .tagline {
+      position: absolute;
+      bottom: 15vh;
+      width: 100%;
+      padding: .5em 0;
+      font-weight: 700;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 24px;
+      background: $pink;
+      text-align: center;
+    }
+  }
+}
+
+.group2 > .fore {
+  color: white;
+
+  .updates > .col {
+    padding: 2em 1.5em;
+
+    p > a::after {
+      content: ' >';
+    }
+
+    &.blog { background: $orange; }
+    &.news { background: $violet; }
+  }
+
+  .students {
+    background: linear-gradient(to left, transparentize($blue, .3), $blue 500px), url(/images/weekend-workshop.jpg);
+    background-size: auto 100%;
+    background-position: right;
+
+    > .col {
+      padding: 2em 1.5em;
+      width: 60%;
+    }
+  }
+}
+
+.group3 {
+  > .fore {
+    color: white;
+
+    .practical {
+      height: 100%;
+
+      > .col {
+        font-weight: 700;
+        font-size: 1.2em;
+        vertical-align: middle;
+        text-align: center;
+      }
+    }
+  }
+
+  > .back {
+    background: url(/images/pixels.png);
+    background-size: 100%;
+    background-repeat: repeat-y;
+    image-rendering: pixelated;
+  }
+}
+
+.group4 > .fore {
+  background: black;
+  color: white;
+
+  .row {
+    > .col {
+      padding: 2em 1.5em;
+    }
+  }
+}

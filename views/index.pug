@@ -1,0 +1,101 @@
+doctype
+
+- let groupIdx = 1;
+mixin group
+  .parallax-group(class=`group${groupIdx++}`)&attributes(attributes)
+    block
+mixin back
+  .parallax-layer.back&attributes(attributes)
+    block
+mixin fore
+  .parallax-layer.fore&attributes(attributes)
+    block
+
+html(lang='en')
+  head(prefix='og: http://ogp.me/ns#')
+    meta(charset='utf8')
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto+Mono:700')
+    link(rel='stylesheet' href='/styles/index.css')
+    title PIxEL Clubs
+    meta(property='og:title' content='PIxEL Clubs')
+    meta(property='og:type' content='website')
+    meta(property='og:image' content='')
+    meta(property='og:url' content='https://pixelclubs.org/')
+    meta(property='og:description' content='')
+
+  body.parallax-wrapper
+    .parallax
+      +group
+        +fore
+          nav
+            .row
+              .col Blog
+              .col Chapters
+              .col Manifesto
+              .col.emph Start a PIxEL
+          .main.row
+            .col LOGO
+            .col
+              .row PIxEL helps students bring their ideas to life with code.
+              .row: span.btn Start a PIxEL
+          .tagline programmers + innovators * entrepreneurs + leaders
+        +back
+      +group.innocent
+        +fore
+          .row.updates
+            .col.blog
+              h3 From the blog
+              p: a(href='#') Lorem ipsum dolor sit amet, consectetur adipisicing elit
+            .col.news
+              h3 Chapter news
+              p: a(href='#') Welcome Northern California!
+          .row.students
+            .col
+              h3 PIxEL Clubs are started by students, for students.
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+      +group
+        +fore
+          .row.practical
+            .col: span PIxEL is about the practical.
+        +back
+      +group.innocent
+        +fore
+          .row
+            .col
+              p Join our mission today.
+          .row
+            .col
+              p How?
+
+  //- script(src='https://cdn.polyfill.io/v2/polyfill.min.js')
+  //-
+   script
+    :babel(presets=['es2015'])
+      (() => {
+        function throttle(type, name, obj = window) {
+          let running = false;
+          obj.addEventListener(type, (...args) => {
+            if (running) { return; }
+            running = true;
+            requestAnimationFrame(() => {
+              obj.dispatchEvent(new CustomEvent(name));
+              running = false;
+            });
+          });
+        }
+        throttle('resize', 'optimizedResize');
+
+        let nodeList = document.querySelectorAll('.parallax-group');
+        let groups = Array.from(nodeList).filter(g =>
+          !g.classList.contains('group1') && !g.classList.contains('group4')
+        );
+        function resize() {
+          groups.forEach(g => {
+            const fore = g.querySelector('.parallax-layer.fore');
+            if (!fore) debugger;
+            g.style.height = `${fore.children[0].offsetHeight}px`;
+          });
+        }
+        window.addEventListener('optimizedResize', resize);
+        resize();
+      })();
