@@ -138,6 +138,10 @@ a {
 .group2 > .fore {
   color: white;
 
+  & > .row {
+    height: 50vh;
+  }
+
   .updates > .col {
     padding: 2em 1.5em;
 
